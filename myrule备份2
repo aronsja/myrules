@@ -1,0 +1,57 @@
+[custom]
+;白名单形式，不断完善
+
+ruleset=🚀 节点选择,https://raw.githubusercontent.com/aronsja/myrules/main/proxy.list
+ruleset=🎯 全球直连,https://raw.githubusercontent.com/aronsja/myrules/main/direct.list
+ruleset=🛑 全球拦截,https://raw.githubusercontent.com/aronsja/myrules/main/reject.list
+ruleset=🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list
+ruleset=🎯 全球直连,clash-classic:https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaMedia/ChinaMedia.yaml,43200
+ruleset=🎯 全球直连,clash-classic:https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaIPs/ChinaIPsTest/ChinaIPsTest_Classical.yaml,43200
+ruleset=🎯 全球直连,clash-classic:https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/China/China.yaml,43200
+ruleset=📹 油管视频:clash-classic:https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTube/YouTube.yaml,43200
+ruleset=📹 油管视频,clash-classic:https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTubeMusic/YouTubeMusic.yaml,43200
+ruleset=🛑 全球拦截,quanx:https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/AdvertisingTest/AdvertisingTest.list,43200
+ruleset=Ⓜ️ 微软服务,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Microsoft/Microsoft.list
+ruleset=🍎 苹果服务,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Apple/Apple.list
+ruleset=📲 电报信息,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Telegram/Telegram.list
+ruleset=🌍 Steam,quanx:https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Steam/Steam.list,43200
+ruleset=🌍 Steam,quanx:https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/SteamCN/SteamCN.list,43200
+ruleset=🎥 台湾解锁,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Bahamut/Bahamut.list
+ruleset=🎥 台湾解锁,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/KKTV/KKTV.list
+ruleset=🎥 台湾解锁,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Cloud/HiNet/HiNet.list
+ruleset=🎥 台湾解锁,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/LiTV/LiTV.list
+ruleset=🎥 台湾解锁,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/HamiVideo/HamiVideo.list
+ruleset=🎥 台湾解锁,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/LineTV/LineTV.list
+ruleset=🎥 奈飞,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Netflix/Netflix.list
+ruleset=🎥 Disney,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Disney/Disney.list
+ruleset=🎥 HBO,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/HBO/HBO.list
+ruleset=🎥 HBO,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/HBOUSA/HBOUSA.list
+ruleset=🎥 HBO,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/HBOAsia/HBOAsia.list
+ruleset=🚀 节点选择,quanx:https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Proxy/Proxy.list,43200
+;ruleset=🎯 全球直连,[]GEOIP,LAN
+ruleset=🎯 全球直连,[]GEOIP,CN
+ruleset=🐟 漏网之鱼,[]FINAL
+
+custom_proxy_group=🚀 节点选择`select`[]🔯 故障转移`[]🔯 AZ负载`[]♻️ 自动选择`[]DIRECT`.*
+custom_proxy_group=♻️ 自动选择`url-test`.*`http://www.gstatic.com/generate_204`300,,50
+custom_proxy_group=🔯 故障转移`url-test`!!GROUPID=0`http://www.gstatic.com/generate_204`60,3,150
+custom_proxy_group=🔯 AZ负载`load-balance`(Az|AZ)`http://www.gstatic.com/generate_204`60,3,30
+custom_proxy_group=🌍 Steam`select`[]🎯 全球直连`[]🔯 AZ负载`[]🚀 节点选择`.*
+custom_proxy_group=📲 电报信息`select`[]🚀 节点选择`[]🔯 AZ负载`[]♻️ 自动选择`[]🎯 全球直连`.*
+custom_proxy_group=Ⓜ️ 微软服务`select`[]🎯 全球直连`[]🔯 AZ负载`[]🚀 节点选择`.*
+custom_proxy_group=🍎 苹果服务`select`[]🎯 全球直连`[]🔯 AZ负载`[]🚀 节点选择`.*
+;custom_proxy_group=📢 谷歌FCM`select`[]🚀 节点选择`[]🎯 全球直连`[]♻️ 自动选择`.*
+custom_proxy_group=🎯 全球直连`select`[]DIRECT`[]🚀 节点选择`[]♻️ 自动选择
+custom_proxy_group=🛑 全球拦截`select`[]REJECT`[]DIRECT
+;custom_proxy_group=🍃 应用净化`select`[]REJECT`[]DIRECT
+custom_proxy_group=🐟 漏网之鱼`select`[]🎯 全球直连`[]🚀 节点选择`[]🔯 AZ负载`[]♻️ 自动选择`.*
+custom_proxy_group=📹 油管视频`select`[]🔯 AZ负载`[]🔯 故障转移`[]🚀 节点选择`[]♻️ 自动选择`.*
+custom_proxy_group=🎥 台湾解锁`select`[]🔯 AZ负载`[]🔯 故障转移`[]🚀 节点选择`[]♻️ 自动选择`.*
+custom_proxy_group=🎥 奈飞`select`[]🔯 AZ负载`!!GROUPID=0
+custom_proxy_group=🎥 Disney`select`[]🔯 AZ负载`!!GROUPID=0
+custom_proxy_group=🎥 HBO`select`[]🔯 AZ负载`!!GROUPID=0
+
+enable_rule_generator=true
+overwrite_original_rules=true
+;clash_rule_base=https://raw.githubusercontent.com/aronsja/myrules/main/GeneralClashConfig.yml
+quanx_rule_base=https://raw.githubusercontent.com/aronsja/myrules/main/GeneralQuanxConfig.conf
