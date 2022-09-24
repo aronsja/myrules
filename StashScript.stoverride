@@ -1,5 +1,6 @@
 name: StashScript
 desc: 定时任务配置
+
 cron:
   # 搭配boxjs执行脚本
   script:
