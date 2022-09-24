@@ -10,6 +10,6 @@ cron:
       debug: false # 开发模式，每次执行前会从 provider 加载最新脚本
  
 script-providers:
-  weather-us-aqi:
+  checkin:
     url: https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/glados/checkin_env.js
     interval: 86400
