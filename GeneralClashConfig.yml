@@ -12,7 +12,7 @@ mixed-port: 7890
 socks-port: 7891
 
 # Linux 和 macOS 的 redir 代理端口 (如需使用此功能，请取消注释)
-# redir-port: 7892
+redir-port: 7892
 
 # 允许局域网的连接（可用来共享代理）
 allow-lan: false
@@ -60,12 +60,8 @@ external-controller: 9090
 dns:
   enable: true # 是否启用dns false
   ipv6: false
-  listen: 0.0.0.0:53
-  enhanced-mode: fake-ip # 模式：redir-host或fake-ip
-  fake-ip-range: 198.18.0.1/16 #
-  fake-ip-filter: # fake ip 白名单列表，如果你不知道这个参数的作用，请勿修改
-     - '*.lan'
-     - localhost.ptlogin2.qq.com
+  listen: 127.0.0.1:5450
+  enhanced-mode: redir-host
   nameserver:
      - 223.5.5.5 # 阿里DNS
      - 180.76.76.76 # 百度DNS
@@ -90,13 +86,13 @@ dns:
        - 240.0.0.0/4
        - 0.0.0.0/32
        - 127.0.0.1/32
-tun:
-  enable: true
-  stack: gvisor
-  auto-detect-interface: true
-  auto-route: true
-  dns-hijavk:
-    - 198.18.0.2:53
+#tun:
+#  enable: true
+#  stack: gvisor
+#  auto-detect-interface: true
+#  auto-route: true
+#  dns-hijavk:
+#    - 198.18.0.2:53
     
 
 # 1. clash DNS 请求逻辑：
