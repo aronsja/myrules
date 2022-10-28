@@ -65,6 +65,7 @@ dns:
   default-nameserver:
      - 223.5.5.5
      - 114.114.114.114
+     - 119.29.29.29
   nameserver:
 #     - 223.5.5.5 # 阿里DNS
 #     - 180.76.76.76 # 百度DNS
@@ -73,8 +74,8 @@ dns:
 #     - 117.50.10.10 # ONE DNS纯净版 直接返回其真实的响应结果
 #     - 114.114.114.114 # 114DNS
      - https://1.116.64.32/dns-query/my-client
-#     - https://dns.alidns.com/dns-query # 阿里 DoH DNS
-#     - https://doh.360.cn/dns-query # 360 DoH DNS
+     - https://dns.alidns.com/dns-query # 阿里 DoH DNS
+     - https://doh.360.cn/dns-query # 360 DoH DNS
   fallback:
 #     - 8.8.8.8 # 谷歌DNS
 #     - 1.1.1.1 # Cloudflare DNS
