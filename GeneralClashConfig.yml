@@ -78,7 +78,6 @@ dns:
 #     - 8.8.8.8
      - https://1.116.64.32/dns-query/my-client
      - https://dns.alidns.com/dns-query # 阿里 DoH DNS
-     - https://doh.360.cn/dns-query # 360 DoH DNS
   fallback:
 #     - 8.8.8.8 # 谷歌DNS
 #     - 1.1.1.1 # Cloudflare DNS
