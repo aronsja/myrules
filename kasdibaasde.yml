@@ -104,7 +104,11 @@ dns:
 #  dns-hijavk:
 #    - 198.18.0.2:53
     
-
+proxies:
+  - name: naive
+    type: socks5
+    server: 127.0.0.1
+    port: 1080
 # 1. clash DNS 请求逻辑：
 #   (1) 当访问一个域名时， nameserver 与 fallback 列表内的所有服务器并发请求，得到域名对应的 IP 地址。
 #   (2) clash 将选取 nameserver 列表内，解析最快的结果。
