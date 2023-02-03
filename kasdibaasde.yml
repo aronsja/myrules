@@ -3,19 +3,19 @@
 # 或者运行目录下的config.yml
 #---------------------------------------------------#
 # 混合端口 HTTP和SOCKS5用一个端口
-mixed-port: 7890
+#mixed-port: 7890
 
 # HTTP 代理端口
 # port: 7890
 
 # SOCKS5 代理端口
-socks-port: 7891
+#socks-port: 7891
 
 # Linux 和 macOS 的 redir 代理端口 (如需使用此功能，请取消注释)
-redir-port: 7892
+#redir-port: 7892
 
 # 允许局域网的连接（可用来共享代理）
-allow-lan: false
+#allow-lan: false
 
 # 仅在将allow-lan设置为true时适用
 # #"*": 绑定所有IP地址
@@ -32,7 +32,7 @@ mode: rule
 log-level: info
 
 # Clash 的 RESTful API
-external-controller: 9090
+#external-controller: 9090
 
 # 您可以将静态网页资源（如 clash-dashboard）放置在一个目录中，clash 将会服务于 `RESTful API/ui`
 # 参数应填写配置目录的相对路径或绝对路径。
@@ -104,11 +104,11 @@ dns:
 #  dns-hijavk:
 #    - 198.18.0.2:53
     
-proxies:
-  - name: naive
-    type: socks5
-    server: 127.0.0.1
-    port: 1080
+#proxies:
+#  - name: naive
+#    type: socks5
+#    server: 127.0.0.1
+#    port: 1080
 # 1. clash DNS 请求逻辑：
 #   (1) 当访问一个域名时， nameserver 与 fallback 列表内的所有服务器并发请求，得到域名对应的 IP 地址。
 #   (2) clash 将选取 nameserver 列表内，解析最快的结果。
