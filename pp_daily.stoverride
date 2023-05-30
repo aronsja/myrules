@@ -4,7 +4,7 @@ desc: yyyyy自用
 cron:
   script:
     - name: pp
-      cron: '10 0 * * *'
+      cron: '14 55 * * *'
       timeout: 20
 
 script-providers:
