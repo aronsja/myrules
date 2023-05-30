@@ -1,0 +1,13 @@
+name: 会员
+desc: yyyyy自用
+
+cron:
+  script:
+    - name: pp
+      cron: '10 0 * * *'
+      timeout: 20
+
+script-providers:
+  pp:
+    url: https://raw.githubusercontent.com/aronsja/myrules/main/pp_invite.js
+    interval: 86400
