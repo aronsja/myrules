@@ -1,1 +1,2 @@
-#DOMAIN-SUFFIX,hostloc.com
+payload:
+# - DOMAIN-SUFFIX,hostloc.com
