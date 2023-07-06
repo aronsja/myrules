@@ -1,13 +1,13 @@
-mixed-port: 7890
-allow-lan: true
-bind-address: "*"
+#mixed-port: 7890
+#allow-lan: true
+#bind-address: "*"
 # Only applicable when setting allow-lan to true
 # "*": bind all IP addresses
 # 192.168.122.11: bind a single IPv4 address
 # "[aaaa::a8aa:ff:fe09:57d8]": bind a single IPv6 address
 mode: Rule
 log-level: info
-external-controller: :9090
+#external-controller: :9090
 
 dns:
   enable: true # 关闭将使用系统 DNS
