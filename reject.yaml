@@ -1,2 +1,7 @@
 payload:
 # - DOMAIN-SUFFIX,hostloc.com
+- DOMAIN-KEYWORD,miav-cse.avlyun
+- DOMAIN-KEYWORD,a0.app.xiaomi
+- DOMAIN-KEYWORD,miui-fxcse.avlyun
+- DOMAIN-KEYWORD,api.installer.xiaomi
+- IP-CIDR,157.148.47.204/30
