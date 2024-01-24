@@ -6,6 +6,5 @@ payload:
  - DOMAIN-SUFFIX,reader.viu.plus
  - DOMAIN-SUFFIX,chat.viu.im
  - DOMAIN-SUFFIX,i1u.org
- - DOMAIN-SUFFIX,ssl1.agapo.cyou
- - DOMAIN-SUFFIX,ssl2.agapo.cyou
- - DOMAIM-SUFFIX,ssl3.agapo.cyou
+ - DOMAIM-SUFFIX,agapo.cyou
+ - DOMAIM-SUFFIX,66a.net
