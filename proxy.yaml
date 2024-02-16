@@ -2,6 +2,7 @@ payload:
  - DOMAIN-SUFFIX,liyuans.com
  - DOMAIN-SUFFIX,googleapis.cn
  - DOMAIN-SUFFIX,akamaized.net
- - DOMAIN-SUFFUX,recaptcha.net
+ - DOMAIN-SUFFIX,recaptcha.net
  - DOMAIN,dash.xns.one
+ - DOMAIN-SUFFIX,nodeseek.com
 
