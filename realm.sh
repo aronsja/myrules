@@ -12,12 +12,12 @@ chmod +x realm
 # 创建配置文件
 cat > /root/config.toml <<EOF
 [[endpoints]]
-listen = "[::]:5000"
-remote = "8.8.8.8:443"
+listen = "[::]:8443"
+remote = "194.169.55.31:8443"
 
-[[endpoints]]
-listen = "[::]:6000"
-remote = "[2400:3200::1]:443"
+#[[endpoints]]
+#listen = "[::]:6000"
+#remote = "[2400:3200::1]:443"
 EOF
 
 # 创建systemd服务文件
