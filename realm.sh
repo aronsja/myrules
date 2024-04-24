@@ -13,7 +13,7 @@ chmod +x realm
 cat > /root/config.toml <<EOF
 [[endpoints]]
 listen = "[::]:8443"
-remote = "194.169.55.31:8443"
+remote = "45.148.132.147:8443"
 
 #[[endpoints]]
 #listen = "[::]:6000"
