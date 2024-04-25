@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # 下载realm
-wget -O realm.tar.gz https://mirror.ghproxy.com/https://github.com/zhboner/realm/releases/download/v2.5.2/realm-x86_64-unknown-linux-gnu.tar.gz
+wget -O realm.tar.gz https://mirror.ghproxy.com/https://github.com/zhboner/realm/releases/download/v2.5.4/realm-x86_64-unknown-linux-gnu.tar.gz
 
 # 解压
 tar -xvf realm.tar.gz
