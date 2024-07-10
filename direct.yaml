@@ -10,3 +10,4 @@ payload:
  - DOMAIN,recaptcha.google.cn
  - DOMAIN-SUFFIX,pro.xns.one
  - DOMAIN-SUFFIX,micu.hk
+ - DOMAIN-SUFFIX,rfchost.com
