@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # 下载realm
-wget -O realm.tar.gz https://github.com/zhboner/realm/releases/download/v2.7.0/realm-x86_64-unknown-linux-gnu.tar.gz
+curl -L -o realm.tar.gz https://github.com/zhboner/realm/releases/download/v2.7.0/realm-x86_64-unknown-linux-gnu.tar.gz
 
 # 解压
 tar -xvf realm.tar.gz
