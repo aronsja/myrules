@@ -6,4 +6,4 @@ payload:
  - DOMAIN,dash.xns.one
  - DOMAIN-SUFFIX,nodeseek.com
  - DOMAIN,www.gstatic.cn
-
+ - DOMAIN-SUFFIX,oculus.com
