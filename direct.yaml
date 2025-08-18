@@ -13,3 +13,4 @@ payload:
  - DOMAIN-SUFFIX,ovh.com
  - DOMAIN-SUFFIX,ovhcloud.com
  - DOMAIN-SUFFIX,host-c.com
+ - DOMAIN-SUFFIX,checkout.stripe.com
