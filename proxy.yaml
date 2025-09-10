@@ -4,6 +4,7 @@ payload:
  - DOMAIN-SUFFIX,akamaized.net
  - DOMAIN-SUFFIX,recaptcha.net
  - DOMAIN,dash.xns.one
+ - DOMAIN,ccs.i1u.org
  - DOMAIN-SUFFIX,nodeseek.com
  - DOMAIN-SUFFIX,oculus.com
  - DOMAIN-SUFFIX,tu.ymawv.la
