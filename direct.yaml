@@ -2,7 +2,6 @@ payload:
  - DOMAIN,sub.store
  - DOMAIN-SUFFIX,sbcorp.lol
  - DOMAIN-SUFFIX,hostcram.com
- - DOMAIN-SUFFIX,i1u.org
  - DOMAIM-SUFFIX,agapo.cyou
  - DOMAIM-SUFFIX,66a.net
  - DOMAIN,recaptcha.google.cn
