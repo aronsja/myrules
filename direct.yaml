@@ -14,3 +14,4 @@ payload:
  - DOMAIN-SUFFIX,host-c.com
  - DOMAIN-SUFFIX,checkout.stripe.com
  - DOMAIN-SUFFIX,fnas.app
+ - DOMAIN,uvv.li
